@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] public GameObject loadingScreen;
-    [SerializeField] public Slider loadingSlider;
+    // [SerializeField] public Slider loadingSlider;
 
     public void LoadLevel(string levelToLoad)
     {   
@@ -24,7 +24,7 @@ public class SceneLoader : MonoBehaviour
         while (!loadOperation.isDone)
         {
             float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            loadingSlider.value = progressValue;
+            // loadingSlider.value = progressValue;
 
             Debug.Log("Loading progress: " + (progressValue * 100) + "%");
 
