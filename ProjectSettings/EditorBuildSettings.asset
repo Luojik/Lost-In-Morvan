@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: fc05576b8e500ef438362b2d1e736f60
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 992338c312fca7c4c9b3d179c77de6f6
+  - enabled: 1
+    path: Assets/Scenes/Dialogue1.unity
+    guid: de23c13057b1c00409c3b718aaac9bfe
+  - enabled: 1
+    path: Assets/Scenes/Combat1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Dialogue2.unity
+    guid: 3eed11f6423e32d4498e5bf7258886fa
+  - enabled: 1
+    path: Assets/Scenes/Combat2.unity
+    guid: 23970afca8ba9d24aa9de53b4da9de2a
+  - enabled: 1
+    path: Assets/Scenes/Dialogue3.unity
+    guid: 8ed7c5579b582e74cab993b7efbc288a
+  - enabled: 1
+    path: Assets/Scenes/InfiniteMode.unity
+    guid: 96b062b0773d94c47bdb1838f996940f
+  m_configObjects: {}
