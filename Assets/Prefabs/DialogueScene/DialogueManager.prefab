@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &426093580367434936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5124323932308129685}
+  - component: {fileID: 4048444961433678167}
+  m_Layer: 0
+  m_Name: DialogueAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5124323932308129685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426093580367434936}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -175.61932, y: 100.812294, z: -0.45770133}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6781753524172010252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4048444961433678167
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426093580367434936}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &2164738296128825149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6781753524172010252}
+  - component: {fileID: 7590694010360972644}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6781753524172010252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164738296128825149}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 344.1322, y: 51.325447, z: -0.6963824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5124323932308129685}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7590694010360972644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164738296128825149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512aec7440f45a04095dbf2b33c853b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  speakerNameText: {fileID: 0}
+  audioSource: {fileID: 4048444961433678167}
+  speakerImage: {fileID: 0}
+  dialogueSequence:
+    dialogues:
+    - speakerName: William Fletcher
+      dialogueText: "What\u2026? Gh\u2014what happened? "
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: Narrator
+      dialogueText: William looks around, disoriented, and then notices the chauffeur's
+        seat.
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "Is that\u2026blood?"
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "There\u2019s no pulse\u2014he\u2019s dead."
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "Gh\u2014my head hurts!"
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: I must have hit it when we crashed.
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: It looks like we drove off the road and into the ravine.
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "There\u2019s no way to get back to the road too. It\u2019s too
+        steep to climb. "
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "On top of that, it\u2019s almost dark, and I\u2019m stuck in
+        the middle of the woods. "
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "There\u2019s nothing around\u2026 absolutely nothing! "
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: "I don\u2019t even know where I am, and the road is unreachable. "
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: 'First priority is to find a safe spot. I need to keep moving. '
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: 'But where? '
+      voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+    - speakerName: '??? '
+      dialogueText: ...
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
+    - speakerName: William Fletcher
+      dialogueText: 'What was that? '
+      voiceClip: {fileID: 0}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}

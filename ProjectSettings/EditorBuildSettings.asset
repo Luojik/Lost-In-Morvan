@@ -6,33 +6,54 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UI/Title.unity
+    path: Assets/Scenes/Title/Title.unity
     guid: fc05576b8e500ef438362b2d1e736f60
   - enabled: 1
-    path: Assets/Scenes/UI/Intro.unity
+    path: Assets/Scenes/Dialogues/Dialogue 0.unity
     guid: 992338c312fca7c4c9b3d179c77de6f6
   - enabled: 1
-    path: Assets/Scenes/Dialogues/Dialogue1.unity
+    path: Assets/Scenes/Dialogues/Dialogue 1.unity
     guid: de23c13057b1c00409c3b718aaac9bfe
   - enabled: 1
-    path: Assets/Scenes/Combat/Combat1.unity
+    path: Assets/Scenes/Combat/Combat 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Dialogues/Dialogue2.unity
-    guid: 3eed11f6423e32d4498e5bf7258886fa
+    path: Assets/Scenes/Dialogues/Dialogue 2.unity
+    guid: 0cf3aa245bc5b7643895362f2b2d83bf
   - enabled: 1
-    path: Assets/Scenes/Combat/Combat2.unity
-    guid: 23970afca8ba9d24aa9de53b4da9de2a
+    path: Assets/Scenes/Combat/Combat 2.unity
+    guid: e25bdbca47b49db4b90b56180bab4c95
   - enabled: 1
-    path: Assets/Scenes/Dialogues/DialogueInterFight1.unity
-    guid: 6e4ef9595a9d95a4892db3c51fb9566e
+    path: Assets/Scenes/Dialogues/Dialogue 3.unity
+    guid: 5c308752b5b64ba43969f985b28304fa
   - enabled: 1
-    path: Assets/Scenes/Combat/Combat3.unity
-    guid: 90d4aba475cb0af499395e690f7e2c56
+    path: Assets/Scenes/Combat/Combat 3.unity
+    guid: 11fca0470febdf943a8434cec54cd955
   - enabled: 1
-    path: Assets/Scenes/Dialogues/Dialogue3.unity
-    guid: 8ed7c5579b582e74cab993b7efbc288a
+    path: Assets/Scenes/Dialogues/Dialogue 4.unity
+    guid: a3c9edcf06817ee49a5f753911c8ad17
   - enabled: 1
-    path: Assets/Scenes/InfiniteMode/InfiniteMode.unity
-    guid: 96b062b0773d94c47bdb1838f996940f
+    path: Assets/Scenes/Dialogues/Dialogue 5.unity
+    guid: 8765b59a0be5aa14f982e353fa2c48a5
+  - enabled: 1
+    path: Assets/Scenes/Combat/Combat 4.unity
+    guid: f575950a8d2236244959925c5ca6b660
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Dialogue 6.unity
+    guid: 2b12f098c4fc4054194665a899270a65
+  - enabled: 1
+    path: Assets/Scenes/Combat/Combat 5.unity
+    guid: 6c10f4003db489c47ae800e9769b849f
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Dialogue 7.unity
+    guid: 34b31c7714007c74886780859ee4c493
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Dialogue 8.unity
+    guid: 19d5c13c5a84cdc41a11be061ab43490
+  - enabled: 1
+    path: Assets/Scenes/Dialogues/Dialogue 9.unity
+    guid: e53ffba76e6550545952b897b9bf6ea2
+  - enabled: 1
+    path: Assets/Scenes/Credits/Credits.unity
+    guid: 4e8658160fe8ba84fbaa53c11465c81b
   m_configObjects: {}

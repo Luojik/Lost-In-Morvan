@@ -1,0 +1,136 @@
+{
+    "questions": [
+        {
+            "mot": "How do you say 'to be' in French?",
+            "options": ["avoir", "être", "faire", "dire"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "être"
+        },
+        {
+            "mot": "How do you say 'to have' in French?",
+            "options": ["avoir", "être", "faire", "dire"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "avoir"
+        },
+        {
+            "mot": "How do you say 'to do' in French?",
+            "options": ["avoir", "être", "faire", "dire"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "faire"
+        },
+        {
+            "mot": "How do you say 'to say' in French?",
+            "options": ["avoir", "être", "faire", "dire"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "dire"
+        },
+        {
+            "mot": "How do you say 'to go' in French?",
+            "options": ["aller", "venir", "partir", "arriver"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "aller"
+        },
+        {
+            "mot": "How do you say 'to come' in French?",
+            "options": ["aller", "venir", "partir", "arriver"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "venir"
+        },
+        {
+            "mot": "How do you say 'to leave' in French?",
+            "options": ["aller", "venir", "partir", "arriver"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "partir"
+        },
+        {
+            "mot": "How do you say 'to arrive' in French?",
+            "options": ["aller", "venir", "partir", "arriver"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "arriver"
+        },
+        {
+            "mot": "How do you say 'to eat' in French?",
+            "options": ["manger", "boire", "prendre", "chercher"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "manger"
+        },
+        {
+            "mot": "How do you say 'to drink' in French?",
+            "options": ["manger", "boire", "prendre", "chercher"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "boire"
+        },
+        {
+            "mot": "How do you say 'to take' in French?",
+            "options": ["manger", "boire", "prendre", "chercher"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "prendre"
+        },
+        {
+            "mot": "How do you say 'to search' in French?",
+            "options": ["manger", "boire", "prendre", "chercher"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "chercher"
+        },
+        {
+            "mot": "How do you say 'to see' in French?",
+            "options": ["voir", "regarder", "entendre", "sentir"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "voir"
+        },
+        {
+            "mot": "How do you say 'to watch' in French?",
+            "options": ["voir", "regarder", "entendre", "sentir"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "regarder"
+        },
+        {
+            "mot": "How do you say 'to hear' in French?",
+            "options": ["voir", "regarder", "entendre", "sentir"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "entendre"
+        },
+        {
+            "mot": "How do you say 'to feel' in French?",
+            "options": ["voir", "regarder", "entendre", "sentir"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "sentir"
+        },
+        {
+            "mot": "How do you say 'to speak' in French?",
+            "options": ["parler", "écouter", "répondre", "demander"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "parler"
+        },
+        {
+            "mot": "How do you say 'to listen' in French?",
+            "options": ["parler", "écouter", "répondre", "demander"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "écouter"
+        },
+        {
+            "mot": "How do you say 'to answer' in French?",
+            "options": ["parler", "écouter", "répondre", "demander"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "répondre"
+        },
+        {
+            "mot": "How do you say 'to ask' in French?",
+            "options": ["parler", "écouter", "répondre", "demander"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "demander"
+        },
+        {
+            "mot": "How do you say 'to work' in French?",
+            "options": ["travailler", "étudier", "jouer", "réussir"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "travailler"
+        },
+        {
+            "mot": "How do you say 'to study' in French?",
+            "options": ["travailler", "étudier", "jouer", "réussir"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "étudier"
+        }
+    ]
+}

@@ -13,6 +13,9 @@ public class DialogueManager : MonoBehaviour
     public DialogueSequence dialogueSequence;
     private int currentDialogueIndex = 0;
 
+    private AudioClip currentBackgroundMusic;
+    public AudioSource backgroundMusicSource;
+
     void Start()
     {
         DisplayDialogue();
@@ -38,6 +41,13 @@ public class DialogueManager : MonoBehaviour
             {
                 audioSource.clip = currentDialogue.voiceClip;
                 audioSource.Play();
+            }
+
+            if (currentBackgroundMusic != currentDialogue.backgroundMusic)
+            {
+                backgroundMusicSource.clip = currentDialogue.backgroundMusic;
+                backgroundMusicSource.Play();
+                currentBackgroundMusic = currentDialogue.backgroundMusic;
             }
 
             StartCoroutine(TypeText(currentDialogue.dialogueText));

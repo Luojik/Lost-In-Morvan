@@ -1,0 +1,136 @@
+{
+    "questions": [
+        {
+            "mot": "How do you say 'chair' in French?",
+            "options": ["chaise", "table", "canapé", "lampe"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "chaise"
+        },
+        {
+            "mot": "How do you say 'table' in French?",
+            "options": ["chaise", "table", "canapé", "lampe"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "table"
+        },
+        {
+            "mot": "How do you say 'sofa' in French?",
+            "options": ["chaise", "table", "canapé", "lampe"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "canapé"
+        },
+        {
+            "mot": "How do you say 'lamp' in French?",
+            "options": ["chaise", "table", "canapé", "lampe"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "lampe"
+        },
+        {
+            "mot": "How do you say 'bed' in French?",
+            "options": ["lit", "armoire", "étagère", "bureau"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "lit"
+        },
+        {
+            "mot": "How do you say 'wardrobe' in French?",
+            "options": ["lit", "armoire", "étagère", "bureau"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "armoire"
+        },
+        {
+            "mot": "How do you say 'shelf' in French?",
+            "options": ["lit", "armoire", "étagère", "bureau"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "étagère"
+        },
+        {
+            "mot": "How do you say 'desk' in French?",
+            "options": ["lit", "armoire", "étagère", "bureau"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "bureau"
+        },
+        {
+            "mot": "How do you say 'refrigerator' in French?",
+            "options": ["réfrigérateur", "four", "micro-ondes", "évier"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "réfrigérateur"
+        },
+        {
+            "mot": "How do you say 'oven' in French?",
+            "options": ["réfrigérateur", "four", "micro-ondes", "évier"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "four"
+        },
+        {
+            "mot": "How do you say 'microwave' in French?",
+            "options": ["réfrigérateur", "four", "micro-ondes", "évier"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "micro-ondes"
+        },
+        {
+            "mot": "How do you say 'sink' in French?",
+            "options": ["réfrigérateur", "four", "micro-ondes", "évier"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "évier"
+        },
+        {
+            "mot": "How do you say 'television' in French?",
+            "options": ["télévision", "ordinateur", "radio", "console"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "télévision"
+        },
+        {
+            "mot": "How do you say 'computer' in French?",
+            "options": ["télévision", "ordinateur", "radio", "console"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "ordinateur"
+        },
+        {
+            "mot": "How do you say 'radio' in French?",
+            "options": ["télévision", "ordinateur", "radio", "console"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "radio"
+        },
+        {
+            "mot": "How do you say 'game console' in French?",
+            "options": ["télévision", "ordinateur", "radio", "console"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "console"
+        },
+        {
+            "mot": "How do you say 'mirror' in French?",
+            "options": ["miroir", "photo", "tableau", "vase"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "miroir"
+        },
+        {
+            "mot": "How do you say 'photo' in French?",
+            "options": ["miroir", "photo", "tableau", "vase"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "photo"
+        },
+        {
+            "mot": "How do you say 'painting' in French?",
+            "options": ["miroir", "photo", "tableau", "vase"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "tableau"
+        },
+        {
+            "mot": "How do you say 'vase' in French?",
+            "options": ["miroir", "photo", "tableau", "vase"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "vase"
+        },
+        {
+            "mot": "How do you say 'rug' in French?",
+            "options": ["tapis", "rideau", "coussin", "plante"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "tapis"
+        },
+        {
+            "mot": "How do you say 'curtain' in French?",
+            "options": ["tapis", "rideau", "coussin", "plante"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "rideau"
+        }
+    ]
+}

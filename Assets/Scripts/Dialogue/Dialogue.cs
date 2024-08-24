@@ -8,4 +8,5 @@ public class Dialogue
     public string dialogueText;
     public AudioClip voiceClip; 
     public Sprite speakerImage;
+    public AudioClip backgroundMusic;
 }

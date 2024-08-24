@@ -1,0 +1,124 @@
+{
+    "questions": [
+        {
+            "mot": "How do you say 'big' in French?",
+            "options": ["petit", "grand", "jeune", "vieux"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "grand"
+        },
+        {
+            "mot": "How do you say 'small' in French?",
+            "options": ["petit", "grand", "jeune", "vieux"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "petit"
+        },
+        {
+            "mot": "How do you say 'young' in French?",
+            "options": ["petit", "grand", "jeune", "vieux"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "jeune"
+        },
+        {
+            "mot": "How do you say 'old' in French?",
+            "options": ["petit", "grand", "jeune", "vieux"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "vieux"
+        },
+        {
+            "mot": "How do you say 'happy' in French?",
+            "options": ["heureux", "triste", "fatigué", "fâché"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "heureux"
+        },
+        {
+            "mot": "How do you say 'sad' in French?",
+            "options": ["heureux", "triste", "fatigué", "fâché"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "triste"
+        },
+        {
+            "mot": "How do you say 'tired' in French?",
+            "options": ["heureux", "triste", "fatigué", "fâché"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "fatigué"
+        },
+        {
+            "mot": "How do you say 'angry' in French?",
+            "options": ["heureux", "triste", "fatigué", "fâché"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "fâché"
+        },
+        {
+            "mot": "How do you say 'beautiful' in French?",
+            "options": ["beau", "laid", "jeune", "vieux"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "beau"
+        },
+        {
+            "mot": "How do you say 'ugly' in French?",
+            "options": ["beau", "laid", "jeune", "vieux"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "laid"
+        },
+        {
+            "mot": "How do you say 'good' in French?",
+            "options": ["bon", "mauvais", "gentil", "méchant"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "bon"
+        },
+        {
+            "mot": "How do you say 'bad' in French?",
+            "options": ["bon", "mauvais", "gentil", "méchant"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "mauvais"
+        },
+        {
+            "mot": "How do you say 'kind' in French?",
+            "options": ["bon", "mauvais", "gentil", "méchant"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "gentil"
+        },
+        {
+            "mot": "How do you say 'mean' in French?",
+            "options": ["bon", "mauvais", "gentil", "méchant"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "méchant"
+        },
+        {
+            "mot": "How do you say 'fast' in French?",
+            "options": ["rapide", "lent", "fort", "faible"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "rapide"
+        },
+        {
+            "mot": "How do you say 'slow' in French?",
+            "options": ["rapide", "lent", "fort", "faible"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "lent"
+        },
+        {
+            "mot": "How do you say 'strong' in French?",
+            "options": ["rapide", "lent", "fort", "faible"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "fort"
+        },
+        {
+            "mot": "How do you say 'weak' in French?",
+            "options": ["rapide", "lent", "fort", "faible"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "faible"
+        },
+        {
+            "mot": "How do you say 'new' in French?",
+            "options": ["nouveau", "vieux", "ancien", "jeune"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "nouveau"
+        },
+        {
+            "mot": "How do you say 'ancient' in French?",
+            "options": ["nouveau", "vieux", "ancien", "jeune"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "ancien"
+        }
+    ]
+}

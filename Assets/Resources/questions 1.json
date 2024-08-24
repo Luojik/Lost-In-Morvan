@@ -1,0 +1,148 @@
+{
+    "questions": [
+        {
+            "mot": "How do you say 'cat' in French?",
+            "options": ["chat", "chien", "oiseau", "poisson"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "chat"
+        },
+        {
+            "mot": "How do you say 'dog' in French?",
+            "options": ["chat", "chien", "oiseau", "poisson"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "chien"
+        },
+        {
+            "mot": "How do you say 'bird' in French?",
+            "options": ["chat", "chien", "oiseau", "poisson"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "oiseau"
+        },
+        {
+            "mot": "How do you say 'fish' in French?",
+            "options": ["chat", "chien", "oiseau", "poisson"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "poisson"
+        },
+        {
+            "mot": "How do you say 'horse' in French?",
+            "options": ["cheval", "vache", "mouton", "cochon"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "cheval"
+        },
+        {
+            "mot": "How do you say 'cow' in French?",
+            "options": ["cheval", "vache", "mouton", "cochon"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "vache"
+        },
+        {
+            "mot": "How do you say 'sheep' in French?",
+            "options": ["cheval", "vache", "mouton", "cochon"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "mouton"
+        },
+        {
+            "mot": "How do you say 'pig' in French?",
+            "options": ["cheval", "vache", "mouton", "cochon"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "cochon"
+        },
+        {
+            "mot": "How do you say 'rabbit' in French?",
+            "options": ["lapin", "souris", "rat", "écureuil"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "lapin"
+        },
+        {
+            "mot": "How do you say 'mouse' in French?",
+            "options": ["lapin", "souris", "rat", "écureuil"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "souris"
+        },
+        {
+            "mot": "How do you say 'rat' in French?",
+            "options": ["lapin", "souris", "rat", "écureuil"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "rat"
+        },
+        {
+            "mot": "How do you say 'squirrel' in French?",
+            "options": ["lapin", "souris", "rat", "écureuil"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "écureuil"
+        },
+        {
+            "mot": "How do you say 'lion' in French?",
+            "options": ["lion", "tigre", "éléphant", "girafe"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "lion"
+        },
+        {
+            "mot": "How do you say 'tiger' in French?",
+            "options": ["lion", "tigre", "éléphant", "girafe"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "tigre"
+        },
+        {
+            "mot": "How do you say 'elephant' in French?",
+            "options": ["lion", "tigre", "éléphant", "girafe"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "éléphant"
+        },
+        {
+            "mot": "How do you say 'giraffe' in French?",
+            "options": ["lion", "tigre", "éléphant", "girafe"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "girafe"
+        },
+        {
+            "mot": "How do you say 'bear' in French?",
+            "options": ["ours", "loup", "renard", "singe"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "ours"
+        },
+        {
+            "mot": "How do you say 'wolf' in French?",
+            "options": ["ours", "loup", "renard", "singe"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "loup"
+        },
+        {
+            "mot": "How do you say 'fox' in French?",
+            "options": ["ours", "loup", "renard", "singe"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "renard"
+        },
+        {
+            "mot": "How do you say 'monkey' in French?",
+            "options": ["ours", "loup", "renard", "singe"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "singe"
+        },
+        {
+            "mot": "How do you say 'duck' in French?",
+            "options": ["canard", "poulet", "dinde", "oie"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "canard"
+        },
+        {
+            "mot": "How do you say 'chicken' in French?",
+            "options": ["canard", "poulet", "dinde", "oie"],
+            "indexBonneReponse": 1,
+            "correctAnswer": "poulet"
+        },
+        {
+            "mot": "How do you say 'turkey' in French?",
+            "options": ["canard", "poulet", "dinde", "oie"],
+            "indexBonneReponse": 2,
+            "correctAnswer": "dinde"
+        },
+        {
+            "mot": "How do you say 'goose' in French?",
+            "options": ["canard", "poulet", "dinde", "oie"],
+            "indexBonneReponse": 3,
+            "correctAnswer": "oie"
+        }
+    ]
+}

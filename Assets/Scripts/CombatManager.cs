@@ -32,11 +32,24 @@ public class CombatManager : MonoBehaviour
     private SoldierHealth soldierHealth;
     private OrcHealth orcHealth;
 
-    public int damage;
+    public int soldierDamage;
+    public int orcDamage;
 
     public int score = 0;
-
     public Text scoreText;
+
+    public string fileName;
+
+    private bool isFeedbackActive = false;
+
+    public Button continueButton;
+    public Button resetButton;
+
+    public GameObject combatPanel;
+
+    public Text timerText;
+    private float timeRemaining = 10f;
+    private bool isTimerRunning = false;
 
     void Start()
     {
@@ -45,13 +58,11 @@ public class CombatManager : MonoBehaviour
 
         soldierHealth = soldier.GetComponent<SoldierHealth>();
         orcHealth = orc.GetComponent<OrcHealth>();
-
-        damage = 15;
     }
 
     void LoadQuestionsFromJSON()
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>("questions");
+        TextAsset jsonFile = Resources.Load<TextAsset>(fileName);
 
         if (jsonFile != null)
         {
@@ -80,15 +91,12 @@ public class CombatManager : MonoBehaviour
 
     void DisplayQuestion()
     {
-        // Obtenir une question aléatoire
         currentQuestion = GetRandomQuestion();
 
         if (currentQuestion != null)
         {
-            // Mettre à jour le texte de la question
             motText.text = currentQuestion.mot;
 
-            // Mettre à jour les boutons avec les options de réponse
             for (int i = 0; i < optionButtons.Length; i++)
             {
                 if (i < currentQuestion.options.Length)
@@ -96,12 +104,25 @@ public class CombatManager : MonoBehaviour
                     optionButtons[i].GetComponentInChildren<Text>().text = currentQuestion.options[i];
 
                     int index = i; 
-                    optionButtons[i].onClick.RemoveAllListeners(); // Nettoyer les anciens listeners
+                    optionButtons[i].onClick.RemoveAllListeners();
                     optionButtons[i].onClick.AddListener(() => CheckAnswer(index));
                 }
             }
 
-            feedbackText.text = ""; // Réinitialiser le texte de feedback
+            feedbackText.text = "";
+            EnableButtons(true);
+
+            timeRemaining = 10f;
+            isTimerRunning = true;
+            UpdateTimerUI();
+        }
+    }
+
+    void EnableButtons(bool isEnabled)
+    {
+        foreach (Button button in optionButtons)
+        {
+            button.interactable = isEnabled;
         }
     }
 
@@ -115,74 +136,96 @@ public class CombatManager : MonoBehaviour
 
     void CheckAnswer(int index)
     {
+        if (isFeedbackActive) return;
+
+        isFeedbackActive = true;
+
+        isTimerRunning = false;
+
         if (index == currentQuestion.indexBonneReponse)
         {
             feedbackText.text = "Correct!";
-             // StartCoroutine(ActivateForDuration(soldierAnimator, SoldierSlashAnimator, 0.5f));
-             soldierAnimator.SetTrigger("Attack");
-             PlaySound(correctSound);
-             orcHealth.TakeDamage(damage);
-             score += 75;
-             UpdateScoreUI();
-             //OrcHealth.instance.TakeDamage(15);
-            // Appliquer des dégâts ou d'autres actions appropriées
+            soldierAnimator.SetTrigger("Attack");
+            SoldierSlashAnimator.GetComponent<Animator>().SetTrigger("SoldierSlash");
+            orcAnimator.SetTrigger("Hurt");
+            PlaySound(correctSound);
+            orcHealth.TakeDamage(soldierDamage);
+            //score += soldierDamage;
+            UpdateScoreUI();
         }
         else
         {
             feedbackText.text = $"Incorrect! The correct answer was: '{currentQuestion.correctAnswer}'";
-            
-             // StartCoroutine(ActivateForDuration(orcAnimator, OrcSlashAnimator, 0.5f));
-             orcAnimator.SetTrigger("Attack");
-             //soldier.TakeDamage(15);
-             PlaySound(incorrectSound);
-             soldierHealth.TakeDamage(damage);
-            // Appliquer des dégâts ou d'autres actions appropriées
+            orcAnimator.SetTrigger("Attack");
+            OrcSlashAnimator.GetComponent<Animator>().SetTrigger("OrcSlash");
+            soldierAnimator.SetTrigger("Hurt");
+            PlaySound(incorrectSound);
+            soldierHealth.TakeDamage(orcDamage);
+            //score -= orcDamage;
+            UpdateScoreUI();
         }
 
-        // Passer à la question suivante après un court délai
-        currentQuestionIndex++;
-        Invoke("DisplayQuestion", 2); // Afficher la question suivante après 2 secondes
+        EnableButtons(false);
+        Invoke("DisplayNextQuestion", 3);
+    }
+
+    void DisplayNextQuestion()
+    {
+        isFeedbackActive = false;
+        DisplayQuestion();
     }
 
     void UpdateScoreUI()
-{
-    scoreText.text = "Score: " + score.ToString();
-}
+    {
+        //scoreText.text = "Score: " + score.ToString();
+    }
 
     public void EndCombat()
     {
         feedbackText.text = "Combat terminé!";
+        
     }
 
-    /* IEnumerator ActivateForDuration(Animator animator, GameObject obj, float duration)
+    void UpdateTimerUI()
     {
-        // Activer le GameObject
-        if (obj != null)
-        {
-            animator.SetTrigger("Attack");
-            obj.SetActive(true);
-            
-        }
-
-        // Attendre pendant la durée spécifiée
-        yield return new WaitForSeconds(duration);
-
-        // Désactiver le GameObject
-        if (obj != null)
-        {
-            obj.SetActive(false);
-        }
-    } */
+        timerText.text = "Time: " + Mathf.Ceil(timeRemaining).ToString();
+    }
 
     void Update()
     {
-        if(orcHealth.die)
+        if (isTimerRunning)
         {
-            GotoNextScene();
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                Debug.Log("Time Remaining: " + timeRemaining);
+                UpdateTimerUI();
+            }
+            else
+            {
+                isTimerRunning = false;
+                timeRemaining = 0;
+                Debug.Log("Timer Expired");
+                UpdateTimerUI();
+                CheckAnswer(-1);
+            }
         }
-        else if(soldierHealth.die)
+
+        if (orcHealth.die)
+        {   
+            orcAnimator.SetTrigger("Death");
+            Invoke("EndCombat", 2);
+            isTimerRunning = false;
+            continueButton.gameObject.SetActive(true);
+            combatPanel.gameObject.SetActive(false);
+        }
+        else if (soldierHealth.die)
         {
-            Reset();
+            soldierAnimator.SetTrigger("Death");
+            Invoke("EndCombat", 2);
+            isTimerRunning = false;
+            resetButton.gameObject.SetActive(true);
+            combatPanel.gameObject.SetActive(false);
         }
     }
 
@@ -194,9 +237,10 @@ public class CombatManager : MonoBehaviour
         SceneManager.LoadScene(nextSceneIndex);
     }
 
-    void Reset()
+    public void Reset()
     {
         SceneManager.LoadScene(0);
     }
 }
+
 
