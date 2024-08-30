@@ -1,148 +1,94 @@
 {
     "questions": [
         {
-            "mot": "How do you say 'bread' in French?",
-            "options": ["pain", "croissant", "brioche", "baguette"],
+            "mot": "How do you say 'time' in French?",
+            "options": ["temps", "moment", "heure", "minute"],
             "indexBonneReponse": 0,
-            "correctAnswer": "pain"
+            "correctAnswer": "temps"
         },
         {
-            "mot": "How do you say 'croissant' in French?",
-            "options": ["pain", "croissant", "brioche", "baguette"],
-            "indexBonneReponse": 1,
-            "correctAnswer": "croissant"
-        },
-        {
-            "mot": "How do you say 'brioche' in French?",
-            "options": ["pain", "croissant", "brioche", "baguette"],
+            "mot": "How do you say 'hour' in French?",
+            "options": ["temps", "moment", "heure", "minute"],
             "indexBonneReponse": 2,
-            "correctAnswer": "brioche"
+            "correctAnswer": "heure"
         },
         {
-            "mot": "How do you say 'baguette' in French?",
-            "options": ["pain", "croissant", "brioche", "baguette"],
+            "mot": "How do you say 'minute' in French?",
+            "options": ["temps", "moment", "heure", "minute"],
             "indexBonneReponse": 3,
-            "correctAnswer": "baguette"
+            "correctAnswer": "minute"
         },
         {
-            "mot": "How do you say 'butter' in French?",
-            "options": ["beurre", "crème", "lait", "yaourt"],
+            "mot": "How do you say 'second' in French?",
+            "options": ["seconde", "minute", "heure", "temps"],
             "indexBonneReponse": 0,
-            "correctAnswer": "beurre"
+            "correctAnswer": "seconde"
         },
         {
-            "mot": "How do you say 'cream' in French?",
-            "options": ["beurre", "crème", "lait", "yaourt"],
-            "indexBonneReponse": 1,
-            "correctAnswer": "crème"
-        },
-        {
-            "mot": "How do you say 'milk' in French?",
-            "options": ["beurre", "crème", "lait", "yaourt"],
-            "indexBonneReponse": 2,
-            "correctAnswer": "lait"
-        },
-        {
-            "mot": "How do you say 'yogurt' in French?",
-            "options": ["beurre", "crème", "lait", "yaourt"],
-            "indexBonneReponse": 3,
-            "correctAnswer": "yaourt"
-        },
-        {
-            "mot": "How do you say 'apple' in French?",
-            "options": ["pomme", "banane", "orange", "raisin"],
+            "mot": "How do you say 'today' in French?",
+            "options": ["aujourd'hui", "hier", "demain", "semaine"],
             "indexBonneReponse": 0,
-            "correctAnswer": "pomme"
+            "correctAnswer": "aujourd'hui"
         },
         {
-            "mot": "How do you say 'banana' in French?",
-            "options": ["pomme", "banane", "orange", "raisin"],
+            "mot": "How do you say 'yesterday' in French?",
+            "options": ["aujourd'hui", "hier", "demain", "semaine"],
             "indexBonneReponse": 1,
-            "correctAnswer": "banane"
+            "correctAnswer": "hier"
         },
         {
-            "mot": "How do you say 'orange' in French?",
-            "options": ["pomme", "banane", "orange", "raisin"],
+            "mot": "How do you say 'tomorrow' in French?",
+            "options": ["aujourd'hui", "hier", "demain", "semaine"],
             "indexBonneReponse": 2,
-            "correctAnswer": "orange"
+            "correctAnswer": "demain"
         },
         {
-            "mot": "How do you say 'grape' in French?",
-            "options": ["pomme", "banane", "orange", "raisin"],
+            "mot": "How do you say 'week' in French?",
+            "options": ["mois", "année", "jour", "semaine"],
             "indexBonneReponse": 3,
-            "correctAnswer": "raisin"
+            "correctAnswer": "semaine"
         },
         {
-            "mot": "How do you say 'carrot' in French?",
-            "options": ["carotte", "tomate", "poivron", "concombre"],
+            "mot": "How do you say 'month' in French?",
+            "options": ["mois", "semaine", "année", "jour"],
             "indexBonneReponse": 0,
-            "correctAnswer": "carotte"
+            "correctAnswer": "mois"
         },
         {
-            "mot": "How do you say 'tomato' in French?",
-            "options": ["carotte", "tomate", "poivron", "concombre"],
-            "indexBonneReponse": 1,
-            "correctAnswer": "tomate"
-        },
-        {
-            "mot": "How do you say 'pepper' in French?",
-            "options": ["carotte", "tomate", "poivron", "concombre"],
+            "mot": "How do you say 'year' in French?",
+            "options": ["mois", "semaine", "année", "jour"],
             "indexBonneReponse": 2,
-            "correctAnswer": "poivron"
+            "correctAnswer": "année"
         },
         {
-            "mot": "How do you say 'cucumber' in French?",
-            "options": ["carotte", "tomate", "poivron", "concombre"],
-            "indexBonneReponse": 3,
-            "correctAnswer": "concombre"
-        },
-        {
-            "mot": "How do you say 'chicken' in French?",
-            "options": ["poulet", "bœuf", "porc", "agneau"],
+            "mot": "How do you say 'date' in French?",
+            "options": ["date", "jour", "mois", "année"],
             "indexBonneReponse": 0,
-            "correctAnswer": "poulet"
+            "correctAnswer": "date"
         },
         {
-            "mot": "How do you say 'beef' in French?",
-            "options": ["poulet", "bœuf", "porc", "agneau"],
-            "indexBonneReponse": 1,
-            "correctAnswer": "bœuf"
-        },
-        {
-            "mot": "How do you say 'pork' in French?",
-            "options": ["poulet", "bœuf", "porc", "agneau"],
-            "indexBonneReponse": 2,
-            "correctAnswer": "porc"
-        },
-        {
-            "mot": "How do you say 'lamb' in French?",
-            "options": ["poulet", "bœuf", "porc", "agneau"],
-            "indexBonneReponse": 3,
-            "correctAnswer": "agneau"
-        },
-        {
-            "mot": "How do you say 'fish' in French?",
-            "options": ["poisson", "crevette", "calmar", "moules"],
+            "mot": "How do you say 'schedule' in French?",
+            "options": ["programme", "calendrier", "heure", "semaine"],
             "indexBonneReponse": 0,
-            "correctAnswer": "poisson"
+            "correctAnswer": "programme"
         },
         {
-            "mot": "How do you say 'shrimp' in French?",
-            "options": ["poisson", "crevette", "calmar", "moules"],
+            "mot": "How do you say 'calendar' in French?",
+            "options": ["calendrier", "programme", "semaine", "mois"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "calendrier"
+        },
+        {
+            "mot": "How do you say 'alarm' in French?",
+            "options": ["alarme", "réveil", "sonnerie", "bip"],
             "indexBonneReponse": 1,
-            "correctAnswer": "crevette"
+            "correctAnswer": "réveil"
         },
         {
-            "mot": "How do you say 'squid' in French?",
-            "options": ["poisson", "crevette", "calmar", "moules"],
-            "indexBonneReponse": 2,
-            "correctAnswer": "calmar"
-        },
-        {
-            "mot": "How do you say 'mussels' in French?",
-            "options": ["poisson", "crevette", "calmar", "moules"],
-            "indexBonneReponse": 3,
-            "correctAnswer": "moules"
+            "mot": "How do you say 'o'clock' in French?",
+            "options": ["heure", "minute", "seconde", "temps"],
+            "indexBonneReponse": 0,
+            "correctAnswer": "heure"
         }
     ]
 }

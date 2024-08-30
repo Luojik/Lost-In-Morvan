@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - characterNameText
+  - skillPointsText
+  - damageLevelText
+  - healthLevelText
+  - critsLevelText
+  - HealthBar
   layers:
   - Default
   - TransparentFX
