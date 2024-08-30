@@ -421,7 +421,7 @@ PrefabInstance:
     - target: {fileID: 1647481406025959433, guid: cad00de7ce7ee51419af2dceaf4eccb8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1bd51691a99ebfc42a59ab1f4f2336f4, type: 3}
+      objectReference: {fileID: 21300000, guid: 24514a6ef02a8f5458f5f39d34337db5, type: 3}
     - target: {fileID: 2955934648390592856, guid: cad00de7ce7ee51419af2dceaf4eccb8, type: 3}
       propertyPath: m_Name
       value: DialogueScene

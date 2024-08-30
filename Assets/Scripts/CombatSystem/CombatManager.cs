@@ -26,8 +26,7 @@ public class CombatManager : MonoBehaviour
 
     public GameObject combatPanel;
     public GameObject levelUpPanel;
-
-    public GameObject endOfCombatOptions;
+    public GameObject SkillPanel;
 
     public Text timerText;
     private float timeRemaining = 10f;
@@ -36,7 +35,8 @@ public class CombatManager : MonoBehaviour
     public float xOffset;
     public float yOffset;
 
-    public int nbMistakes;
+    private int nbMistakes;
+    private bool once;
 
     [Header("Soldier Parameters")]
     public GameObject soldier;
@@ -61,14 +61,30 @@ public class CombatManager : MonoBehaviour
 
         soldier = GameObject.FindWithTag("Player");
 
-        soldierAnimator = soldier.GetComponent<Animator>();
-        soldierStats = soldier.GetComponent<PlayerStats>();
-        soldierDamageEffect = soldier.GetComponent<DamageEffect>();
+        if (soldier != null)
+        {
+            soldierAnimator = soldier.GetComponent<Animator>();
+            soldierStats = soldier.GetComponent<PlayerStats>();
+            soldierDamageEffect = soldier.GetComponent<DamageEffect>();
+        }
+        else
+        {
+            Debug.LogError("Player GameObject not found with tag 'Player'.");
+        }
 
-        orcAnimator = orc.GetComponent<Animator>();
-        orcStats = orc.GetComponent<OrcStats>();
+        if (orc != null)
+        {
+            orcAnimator = orc.GetComponent<Animator>();
+            orcStats = orc.GetComponent<OrcStats>();
+            orcDamageEffect = orc.GetComponent<DamageEffect>();
+        }
+        else
+        {
+            Debug.LogError("Orc GameObject not assigned.");
+        }
 
         nbMistakes = 0;
+        once = true;
     }
 
     void LoadQuestionsFromJSON()
@@ -127,6 +143,12 @@ public class CombatManager : MonoBehaviour
             isTimerRunning = true;
             UpdateTimerUI();
         }
+    }
+
+    void DisplayNextQuestion()
+    {
+        isFeedbackActive = false;
+        DisplayQuestion();
     }
 
     void EnableButtons(bool isEnabled)
@@ -201,125 +223,32 @@ public class CombatManager : MonoBehaviour
         Invoke("DisplayNextQuestion", 3);
     }
 
-    void DisplayNextQuestion()
-    {
-        isFeedbackActive = false;
-        DisplayQuestion();
-    }
-
     void UpdateTimerUI()
     {
         timerText.text = "Time: " + Mathf.Ceil(timeRemaining).ToString();
     }
 
-    private bool isTextComponentsAssigned = false;
-
     void Update()
     {
-        
-        soldierStats.skillPointsText.text = "Skill Points: " + soldierStats.skillPoints;
+        soldierStats.skillPointsText.text = soldierStats.skillPoints.ToString();
 
         if (isTimerRunning)
         {
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                // Debug.Log("Time Remaining: " + timeRemaining);
                 UpdateTimerUI();
             }
             else
             {
                 isTimerRunning = false;
                 timeRemaining = 0;
-                Debug.Log("Timer Expired");
                 UpdateTimerUI();
                 CheckAnswer(-1);
             }
         }
 
-        if (orcStats.GetIsDead())
-        {   
-            orcAnimator.SetTrigger("Death");
-            isTimerRunning = false;
-            // endOfCombatOptions.gameObject.SetActive(true);
-            continueButton.gameObject.SetActive(true);
-            combatPanel.gameObject.SetActive(false);
-
-            feedbackText.text = "You Won!";
-
-            levelUpPanel.gameObject.SetActive(true);
-           
-            if (!isTextComponentsAssigned)
-            {
-                GameObject healthLevelTextObject = GameObject.FindWithTag("healthLevelText");
-                if (healthLevelTextObject != null)
-                {
-                    Debug.Log("GameObject with tag 'healthLevelText' found.");
-                    soldierStats.healthLevelText = healthLevelTextObject.GetComponent<Text>();
-                    if (soldierStats.healthLevelText != null)
-                    {
-                        Debug.Log("Text component successfully retrieved for 'healthLevelText'.");
-                    }
-                    else
-                    {
-                        Debug.LogError("Text component not found on the GameObject with tag 'healthLevelText'.");
-                    }
-                }
-                else
-                {
-                    Debug.LogError("No GameObject with the tag 'healthLevelText' found.");
-                }
-
-                GameObject damageLevelTextObject = GameObject.FindWithTag("damageLevelText");
-                if (damageLevelTextObject != null)
-                {
-                    Debug.Log("GameObject with tag 'damageLevelText' found.");
-                    soldierStats.damageLevelText = damageLevelTextObject.GetComponent<Text>();
-                    if (soldierStats.damageLevelText != null)
-                    {
-                        Debug.Log("Text component successfully retrieved for 'damageLevelText'.");
-                    }
-                    else
-                    {
-                        Debug.LogError("Text component not found on the GameObject with tag 'damageLevelText'.");
-                    }
-                }
-                else
-                {
-                    Debug.LogError("No GameObject with the tag 'damageLevelText' found.");
-                }
-
-                GameObject critsLevelTextObject = GameObject.FindWithTag("critsLevelText");
-                if (critsLevelTextObject != null)
-                {
-                    Debug.Log("GameObject with tag 'critsLevelText' found.");
-                    soldierStats.critsLevelText = critsLevelTextObject.GetComponent<Text>();
-                    if (soldierStats.critsLevelText != null)
-                    {
-                        Debug.Log("Text component successfully retrieved for 'critsLevelText'.");
-                    }
-                    else
-                    {
-                        Debug.LogError("Text component not found on the GameObject with tag 'critsLevelText'.");
-                    }
-                }
-                else
-                {
-                    Debug.LogError("No GameObject with the tag 'critsLevelText' found.");
-                }
-
-                isTextComponentsAssigned = true;
-
-                Debug.Log("Text components assigned.");
-
-                soldierStats.skillPoints += GiveSkillPoints();
-
-                soldierStats.healthLevelText.text = "Health: " + soldierStats.maxHealth;
-                soldierStats.damageLevelText.text = "Damage: " + soldierStats.maxDamage;
-                soldierStats.critsLevelText.text = "Crits: " + soldierStats.crits + "%";
-            }
-        }
-        else if (soldierStats.GetIsDead())
+        if (soldierStats.GetIsDead())
         {
             soldierAnimator.SetTrigger("Death");
             isTimerRunning = false;
@@ -330,12 +259,61 @@ public class CombatManager : MonoBehaviour
             if(once)
             {
                 soldierStats.skillPoints += GiveSkillPoints();
-                once = true;
+                once = false;
             }
         }
+        else if (orcStats.GetIsDead())
+        {   
+            orcAnimator.SetTrigger("Death");
+            isTimerRunning = false;
+            continueButton.gameObject.SetActive(true);
+            combatPanel.gameObject.SetActive(false);
+            feedbackText.text = "You Win!";
+
+            levelUpPanel.gameObject.SetActive(true);
+            SkillPanel.gameObject.SetActive(true);
+           
+            if (once)
+            {
+                GameObject healthLevelTextObject = GameObject.FindWithTag("healthLevelText");
+                soldierStats.healthLevelText = healthLevelTextObject.GetComponent<Text>();
+                   
+                GameObject damageLevelTextObject = GameObject.FindWithTag("damageLevelText");
+                soldierStats.damageLevelText = damageLevelTextObject.GetComponent<Text>();
+                
+                GameObject critsLevelTextObject = GameObject.FindWithTag("critsLevelText");
+                soldierStats.critsLevelText = critsLevelTextObject.GetComponent<Text>();
+
+                soldierStats.skillPoints += GiveSkillPoints();
+
+                soldierStats.healthLevelText.text = "Health: " + soldierStats.maxHealth;
+                soldierStats.damageLevelText.text = "Dmg: " + soldierStats.maxDamage;
+                soldierStats.critsLevelText.text = "Crits: " + soldierStats.crits + "%";
+
+                once = false;
+            }
+
+            soldierStats.healthLevelText.text = "Health: " + soldierStats.maxHealth;
+            soldierStats.damageLevelText.text = "Dmg: " + soldierStats.maxDamage;
+            soldierStats.critsLevelText.text = "Crits: " + soldierStats.crits + "%";
+        }  
     }
 
-    private bool once = false;
+    public int GiveSkillPoints()
+    {
+        if (nbMistakes == 0)
+        {
+            return 3;
+        }
+        else if (nbMistakes < 3)
+        {
+            return 2;
+        }
+        else
+        {
+            return 1;
+        }
+    }
 
     public void GotoNextScene()
     {
@@ -348,22 +326,6 @@ public class CombatManager : MonoBehaviour
     public void Reset()
     {
         SceneManager.LoadScene(0);
-    }
-
-    public int GiveSkillPoints()
-    {
-        if(nbMistakes == 0)
-        {
-            return 3;
-        }
-        else if(nbMistakes > 0 || nbMistakes < 3)
-        {
-            return 2;
-        }
-        else
-        {
-            return 1;
-        }
     }
 }
 

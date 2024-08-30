@@ -126,7 +126,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +134,69 @@ TextureImporter:
       bones: []
       spriteID: 297655d054dd0144faea4c8b5d1b58de
       internalID: 1002099209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_skill_tree_icons_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 229
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728e26b4dc6b35e40a97a5d480b0d6d3
+      internalID: -749460210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_skill_tree_icons_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 93
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044415229ed251a4db8a7f19d0850994
+      internalID: -31093627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_skill_tree_icons_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 183
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8832003fcabc5e845b064e1524ebc376
+      internalID: 1619737615
       vertices: []
       indices: 
       edges: []
@@ -151,6 +214,9 @@ TextureImporter:
     nameFileIdTable:
       rpg_skill_tree_icons_0: 803380939
       rpg_skill_tree_icons_1: 1002099209
+      rpg_skill_tree_icons_2: -749460210
+      rpg_skill_tree_icons_3: -31093627
+      rpg_skill_tree_icons_4: 1619737615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

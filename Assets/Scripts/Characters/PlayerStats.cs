@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -42,38 +40,74 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Start method called.");
+
         GameObject healthBarObject = GameObject.FindWithTag("HealthBar");
         GameObject skillPointsTextObject = GameObject.FindWithTag("skillPointsText");
         GameObject characterNameTextObject = GameObject.FindWithTag("characterNameText");
 
-        healthBar = healthBarObject.GetComponent<HealthBar>();
-        skillPointsText = skillPointsTextObject.GetComponent<Text>();
-        characterNameText = characterNameTextObject.GetComponent<Text>();
+        if (healthBarObject != null)
+        {
+            healthBar = healthBarObject.GetComponent<HealthBar>();
+        }
+        else
+        {
+            Debug.LogError("HealthBar object not found.");
+        }
 
-        skillPointsText.text = "Skill Points: " + skillPoints;
-        characterNameText.text = characterName;
+        if (skillPointsTextObject != null)
+        {
+            skillPointsText = skillPointsTextObject.GetComponent<Text>();
+        }
+        else
+        {
+            Debug.LogError("SkillPointsText object not found.");
+        }
 
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-        isDead = false;  
+        if (characterNameTextObject != null)
+        {
+            characterNameText = characterNameTextObject.GetComponent<Text>();
+        }
+        else
+        {
+            Debug.LogError("CharacterNameText object not found.");
+        }
+
+        if (healthBar != null && skillPointsText != null && characterNameText != null)
+        {
+            skillPointsText.text = skillPoints.ToString();
+            characterNameText.text = characterName;
+
+            currentHealth = maxHealth;
+            healthBar.SetMaxHealth(maxHealth);
+            isDead = false;
+        }
+        else
+        {
+            Debug.LogError("One or more Text components are missing.");
+        }
 
         currentSceneName = SceneManager.GetActiveScene().name;
     }
 
     public bool HasSceneChanged()
     {
-        // Get the name of the currently active scene
         string newSceneName = SceneManager.GetActiveScene().name;
 
-        // Check if the scene has changed
         if (currentSceneName != newSceneName)
         {
-            // Update the currentSceneName to the new scene
             currentSceneName = newSceneName;
+            Debug.Log($"Scene changed to: {newSceneName}");
             return true;
         }
-        
+
         return false;
+    }
+
+    bool IsCombatScene()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        return currentSceneName.Contains("Combat");
     }
 
     public bool GetIsDead()
@@ -88,33 +122,58 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        healthBar.SetHealth(currentHealth);
+        if (healthBar != null)
+        {
+            healthBar.SetHealth(currentHealth);
+        }
 
         if (currentHealth <= 0)
         {
             isDead = true;
         }
 
-        skillPointsText.text = "Skill Points: " + skillPoints;
-
-        if(HasSceneChanged())
+        if (skillPointsText != null)
         {
+            skillPointsText.text = skillPoints.ToString();
+        }
+
+        if (HasSceneChanged() && IsCombatScene())
+        {
+            Debug.Log("Updating combat scene parameters.");
             GameObject healthBarObject = GameObject.FindWithTag("HealthBar");
             GameObject skillPointsTextObject = GameObject.FindWithTag("skillPointsText");
             GameObject characterNameTextObject = GameObject.FindWithTag("characterNameText");
 
-            healthBar = healthBarObject.GetComponent<HealthBar>();
-            skillPointsText = skillPointsTextObject.GetComponent<Text>();
-            characterNameText = characterNameTextObject.GetComponent<Text>();
+            if (healthBarObject != null)
+            {
+                healthBar = healthBarObject.GetComponent<HealthBar>();
+            }
 
-            skillPointsText.text = "Skill Points: " + skillPoints;
-            characterNameText.text = characterName;
+            if (skillPointsTextObject != null)
+            {
+                skillPointsText = skillPointsTextObject.GetComponent<Text>();
+            }
 
-            currentHealth = maxHealth;
-            healthBar.SetMaxHealth(maxHealth);
-            isDead = false;  
+            if (characterNameTextObject != null)
+            {
+                characterNameText = characterNameTextObject.GetComponent<Text>();
+            }
 
-            currentSceneName = SceneManager.GetActiveScene().name;
+            if (healthBar != null && skillPointsText != null && characterNameText != null)
+            {
+                skillPointsText.text = skillPoints.ToString();
+                characterNameText.text = characterName;
+
+                currentHealth = maxHealth;
+                healthBar.SetMaxHealth(maxHealth);
+                isDead = false;
+
+                currentSceneName = SceneManager.GetActiveScene().name;
+            }
+            else
+            {
+                Debug.LogError("Failed to reassign Text components.");
+            }
         }
     }
 
@@ -125,83 +184,101 @@ public class PlayerStats : MonoBehaviour
 
     public void AddSkillPoint(int nbPoints)
     {
-        skillPoints+= nbPoints;
+        skillPoints += nbPoints;
     }
 
     public void RemoveSkillPoint(int nbPoints)
     {
-        skillPoints-= nbPoints;
+        skillPoints -= nbPoints;
     }
 
     public void AddHealth()
     {
-        if(skillPoints > 0)
+        if (skillPoints > 0)
         {
             maxHealth += maxHealthAdded;
             Debug.Log("Health added. New Health: " + maxHealth);
             RemoveSkillPoint(1);
             healthLevel++;
-            healthLevelText.text = "Health: " + maxHealth;
+            if (healthLevelText != null)
+            {
+                healthLevelText.text = "Health: " + maxHealth;
+            }
         }
     }
 
     public void AddDamage()
     {
-        if(skillPoints > 0)
+        if (skillPoints > 0)
         {
             maxDamage += maxDamageAdded;
             Debug.Log("Damage added. New Damage: " + maxDamage);
             RemoveSkillPoint(1);
             damageLevel++;
-            damageLevelText.text = "Dmg: " + maxDamage;
+            if (damageLevelText != null)
+            {
+                damageLevelText.text = "Dmg: " + maxDamage;
+            }
         }
     }
 
     public void AddCrits()
     {
-        if(skillPoints > 0)
+        if (skillPoints > 0)
         {
             crits += critsAdded;
             Debug.Log("Crits added. New Crits: " + crits);
             RemoveSkillPoint(1);
             critsLevel++;
-            critsLevelText.text = "Crits: " + crits + "%";
+            if (critsLevelText != null)
+            {
+                critsLevelText.text = "Crits: " + crits + "%";
+            }
         }
     }
 
     public void RemoveHealth()
     {
-        if(maxHealth > 100)
+        if (maxHealth > 100)
         {
             maxHealth -= maxHealthAdded;
-            Debug.Log("Health added. New Health: " + maxHealth);
+            Debug.Log("Health reduced. New Health: " + maxHealth);
             AddSkillPoint(1);
             healthLevel--;
-            healthLevelText.text = "Health: " + maxHealth;
+            if (healthLevelText != null)
+            {
+                healthLevelText.text = "Health: " + maxHealth;
+            }
         }
     }
 
     public void RemoveDamage()
     {
-        if(maxDamage > 15)
+        if (maxDamage > 15)
         {
             maxDamage -= maxDamageAdded;
-            Debug.Log("Damage added. New Damage: " + maxDamage);
+            Debug.Log("Damage reduced. New Damage: " + maxDamage);
             AddSkillPoint(1);
             damageLevel--;
-            damageLevelText.text = "Dmg: " + maxDamage;
+            if (damageLevelText != null)
+            {
+                damageLevelText.text = "Dmg: " + maxDamage;
+            }
         }
     }
 
     public void RemoveCrits()
     {
-        if(crits > 0.01f)
+        if (crits > 0.01f)
         {
             crits -= critsAdded;
-            Debug.Log("CritS added. New CritS: " + crits);
+            Debug.Log("Crits reduced. New Crits: " + crits);
             AddSkillPoint(1);
             critsLevel--;
-            critsLevelText.text = "Crits: " + crits + "%";
+            if (critsLevelText != null)
+            {
+                critsLevelText.text = "Crits: " + crits + "%";
+            }
         }
     }
 

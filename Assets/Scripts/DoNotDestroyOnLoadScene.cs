@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoNotDestroyOnLoadScene : MonoBehaviour
 {
@@ -8,9 +7,24 @@ public class DoNotDestroyOnLoadScene : MonoBehaviour
 
     void Awake()
     {
-        foreach(var element in objects)
+        // Ne pas détruire les objets lors du chargement de nouvelles scènes
+        foreach (var element in objects)
         {
             DontDestroyOnLoad(element);
         }
     }
+
+    void Update()
+    {
+        // Vérifiez si la scène active est la scène 0
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            foreach (var element in objects)
+            {
+                // Détruire les objets si on revient à la scène 0
+                Destroy(element);
+            }
+        }
+    }
 }
+
