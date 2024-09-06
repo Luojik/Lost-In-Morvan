@@ -16,9 +16,35 @@ public class DialogueManager : MonoBehaviour
     private AudioClip currentBackgroundMusic;
     public AudioSource backgroundMusicSource;
 
+    private SceneLoader sceneLoader;
+
+    public Animator speakerAnimator;
+
+    private string previousSpeakerName = "";
+
     void Start()
     {
         DisplayDialogue();
+
+        sceneLoader = GetComponent<SceneLoader>();
+
+        if (sceneLoader == null)
+        {
+            Debug.LogError("SceneLoader component is missing on this GameObject.");
+        }
+
+        if (speakerImage != null)
+        {
+            speakerAnimator = speakerImage.GetComponent<Animator>();
+            if (speakerAnimator == null)
+            {
+                Debug.LogError("Animator component is missing on speakerImage.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Speaker Image is not assigned.");
+        }
     }
 
     void DisplayDialogue()
@@ -31,6 +57,16 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogueIndex < dialogueSequence.dialogues.Count)
         {
             Dialogue currentDialogue = dialogueSequence.dialogues[currentDialogueIndex];
+
+            if (speakerAnimator != null && currentDialogue.speakerName != previousSpeakerName)
+            {
+                speakerAnimator.SetTrigger("Speaks");
+            }
+            else
+            {
+                Debug.LogError("SpeakerAnimator is not assigned.");
+            }
+            previousSpeakerName = currentDialogue.speakerName;
 
             dialogueText.text = currentDialogue.dialogueText;
             speakerNameText.text = currentDialogue.speakerName;
@@ -79,7 +115,10 @@ public class DialogueManager : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int totalScenes = SceneManager.sceneCountInBuildSettings;
         int nextSceneIndex = (currentSceneIndex + 1) % totalScenes;
-        SceneManager.LoadScene(nextSceneIndex);
+        
+        string nextSceneName = SceneUtility.GetScenePathByBuildIndex(nextSceneIndex);
+        
+        sceneLoader.LoadLevel(nextSceneName);
     }
 
     void EndDialogue()

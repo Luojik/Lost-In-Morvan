@@ -38,6 +38,8 @@ public class PlayerStats : MonoBehaviour
 
     private static string currentSceneName;
 
+    private PauseMenu pauseMenu;
+
     void Start()
     {
         Debug.Log("Start method called.");
@@ -45,6 +47,8 @@ public class PlayerStats : MonoBehaviour
         GameObject healthBarObject = GameObject.FindWithTag("HealthBar");
         GameObject skillPointsTextObject = GameObject.FindWithTag("skillPointsText");
         GameObject characterNameTextObject = GameObject.FindWithTag("characterNameText");
+
+        GameObject pauseMenu = GameObject.FindWithTag("PauseMenu");
 
         if (healthBarObject != null)
         {
@@ -136,6 +140,20 @@ public class PlayerStats : MonoBehaviour
         {
             skillPointsText.text = skillPoints.ToString();
         }
+
+        /* if(pauseMenu.GetPauseMenuIsOpen())
+        {
+            GameObject skillPointsTextObject = GameObject.FindWithTag("skillPointsText");
+            skillPointsText.text = skillPoints.ToString();
+
+            GameObject healthLevelTextObject = GameObject.FindWithTag("healthLevelText");
+            GameObject damageLevelTextObject = GameObject.FindWithTag("damageLevelText");
+            GameObject critsLevelTextObject = GameObject.FindWithTag("critsLevelText");
+
+            healthLevelText.text = "Health: " + maxHealth;
+            damageLevelText.text = "Dmg: " + maxDamage;
+            critsLevelText.text = "Crits: " + crits + "%";
+        } */
 
         if (HasSceneChanged() && IsCombatScene())
         {

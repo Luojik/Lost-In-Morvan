@@ -17,14 +17,14 @@ public class DoNotDestroyOnLoadScene : MonoBehaviour
     void Update()
     {
         // Vérifiez si la scène active est la scène 0
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        /* if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             foreach (var element in objects)
             {
                 // Détruire les objets si on revient à la scène 0
                 Destroy(element);
             }
-        }
+        } */
     }
 }
 

@@ -5,34 +5,56 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] public GameObject loadingScreen;
-    // [SerializeField] public Slider loadingSlider;
+    [SerializeField] private Image fadeImage;
+    [SerializeField] private string fadeInTriggerName = "FadeIn";
+
+    private Animator fadeAnimator;
+
+    [SerializeField] public float fadeInDuration = 1f;
+
+    private void Start()
+    {
+        GameObject fadeObject = GameObject.FindGameObjectWithTag("FadeImage");
+
+        if (fadeObject != null)
+        {
+            fadeImage = fadeObject.GetComponent<Image>();
+            if (fadeImage == null)
+            {
+                Debug.LogError("No Image component found on the GameObject with the specified tag.");
+            }
+        }
+        else
+        {
+            Debug.LogError("No GameObject found with the specified tag.");
+        }
+
+        if (fadeImage != null)
+        {
+            fadeAnimator = fadeImage.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError("No Image component assigned.");
+        }
+    }
 
     public void LoadLevel(string levelToLoad)
     {   
-        loadingScreen.SetActive(true);
-
         StartCoroutine(LoadLevelAsync(levelToLoad));
     }
 
     IEnumerator LoadLevelAsync(string levelToLoad)
     {
+        fadeAnimator.SetTrigger(fadeInTriggerName);
         Debug.Log("Starting to load scene: " + levelToLoad);
+
+        yield return new WaitForSeconds(fadeInDuration);
 
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
 
-        while (!loadOperation.isDone)
-        {
-            float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
-            // loadingSlider.value = progressValue;
-
-            Debug.Log("Loading progress: " + (progressValue * 100) + "%");
-
-            yield return null;
-        }
-
-        loadingScreen.SetActive(false);
-
         Debug.Log("Loading complete!");
     }
+
+
 }

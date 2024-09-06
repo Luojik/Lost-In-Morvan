@@ -27,6 +27,7 @@ public class CombatManager : MonoBehaviour
     public GameObject combatPanel;
     public GameObject levelUpPanel;
     public GameObject SkillPanel;
+    public GameObject EndOptions;
 
     public Text timerText;
     private float timeRemaining = 10f;
@@ -252,6 +253,7 @@ public class CombatManager : MonoBehaviour
         {
             soldierAnimator.SetTrigger("Death");
             isTimerRunning = false;
+            EndOptions.gameObject.SetActive(true);
             resetButton.gameObject.SetActive(true);
             combatPanel.gameObject.SetActive(false);
             feedbackText.text = "You Lose!";
@@ -266,6 +268,7 @@ public class CombatManager : MonoBehaviour
         {   
             orcAnimator.SetTrigger("Death");
             isTimerRunning = false;
+            EndOptions.gameObject.SetActive(true);
             continueButton.gameObject.SetActive(true);
             combatPanel.gameObject.SetActive(false);
             feedbackText.text = "You Win!";
@@ -313,19 +316,6 @@ public class CombatManager : MonoBehaviour
         {
             return 1;
         }
-    }
-
-    public void GotoNextScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        int totalScenes = SceneManager.sceneCountInBuildSettings;
-        int nextSceneIndex = (currentSceneIndex + 1) % totalScenes;
-        SceneManager.LoadScene(nextSceneIndex);
-    }
-
-    public void Reset()
-    {
-        SceneManager.LoadScene(0);
     }
 }
 

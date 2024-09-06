@@ -10,6 +10,8 @@ TagManager:
   - healthLevelText
   - critsLevelText
   - HealthBar
+  - PauseMenu
+  - FadeImage
   layers:
   - Default
   - TransparentFX
