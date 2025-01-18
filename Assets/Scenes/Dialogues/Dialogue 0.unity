@@ -815,6 +815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Narrator's Book Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8797174884368032257, guid: 9beaad74fac17c544870066f88b50fac, type: 3}
+      propertyPath: m_TagString
+      value: FadeImage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -868,28 +872,28 @@ MonoBehaviour:
     - speakerName: 
       dialogueText: After the British Empire's withdrawal from India, William Fletcher,
         a seasoned officer, feels lost.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: b7050bc98eb22a945b0daf7d322f6b29, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
       dialogueText: "Recalled to England after years of service in the colonies,
         William boards a ship that lands him in Marseille, France\u2014a country
         he has never visited. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 8774adf2c655b0847b4a20a648f9c89c, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
       dialogueText: 'His journey from Marseille to London seems straightforward:
         Marseille to Lyon, Lyon to Paris, and then on to Calais for the crossing
         to England. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 43ba584bc0a5e1645bdde903393a8eea, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
       dialogueText: 'But fate has other plans. As he travels through the French countryside,
         his car crashes deep in the woods, leaving him injured and stranded where
         both the landscape and language are foreign to him. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ad74ff1a116dcd34c9044430fad4b96c, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
   backgroundMusicSource: {fileID: 679434874}

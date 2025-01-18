@@ -887,26 +887,45 @@ MonoBehaviour:
   dialogueSequence:
     dialogues:
     - speakerName: 
+      dialogueText: 'The day before, William asked the professor if he could take
+        him all the way to Dijon. '
+      voiceClip: {fileID: 8300000, guid: ecb1786b83f3d33479a02bec0d3d3a89, type: 3}
+      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
+    - speakerName: 
+      dialogueText: 'In gratitude for William saving his daughter, the professor
+        gladly agreed. '
+      voiceClip: {fileID: 8300000, guid: 7ae6812795d577f4ab88365ed839cb58, type: 3}
+      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
+    - speakerName: 
       dialogueText: William stood next to Professor Verne, unable to understand the
         words of the Autun locals who were waving goodbye to the doctor.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 0c5946cf68175de4198ace0683a9ed72, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
     - speakerName: 
       dialogueText: Amid the crowd, he spotted Amelia smiling and bidding him farewell.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c9b840f11242c9f49843c4b3ebd8c485, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
     - speakerName: 
       dialogueText: William grinned and, with a sincere effort, shouted his thanks
         in French with the best accent he could muster, which made the young lady
         laugh.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 8c666b2fc8de91e43b7e27fa73a0e835, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
     - speakerName: 
       dialogueText: "With that, he climbed into Professor Verne's car, and they drove
         off toward Dijon\u2026 "
+      voiceClip: {fileID: 8300000, guid: cc2c97dd670edd745926fdb6f76ef8cf, type: 3}
+      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}
+    - speakerName: 
+      dialogueText: Thanks For Playing! ...William Fletcher (David Oliveira), Narrator
+        (Amber Tscherning), Harold Redfield (ExtraFuzzyDice), Amelia (SybarisVA &
+        StarryNight VA), Project Manager (Luojik)...
       voiceClip: {fileID: 0}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 2a944e1c4f1825c47ab12c826264d6e8, type: 3}

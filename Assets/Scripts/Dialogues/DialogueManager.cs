@@ -22,9 +22,13 @@ public class DialogueManager : MonoBehaviour
 
     private string previousSpeakerName = "";
 
+    private float defaultBackgroundMusicVolume = 0.5f;
+
     void Start()
     {
         DisplayDialogue();
+
+        // defaultBackgroundMusicVolume = backgroundMusicSource.volume;
 
         sceneLoader = GetComponent<SceneLoader>();
 
@@ -72,6 +76,7 @@ public class DialogueManager : MonoBehaviour
             speakerNameText.text = currentDialogue.speakerName;
             speakerImage.sprite = currentDialogue.speakerImage;
 
+            AdjustAudioVolumes(currentDialogue.speakerName);
 
             if (currentDialogue.voiceClip != null)
             {
@@ -86,7 +91,7 @@ public class DialogueManager : MonoBehaviour
                 currentBackgroundMusic = currentDialogue.backgroundMusic;
             }
 
-            StartCoroutine(TypeText(currentDialogue.dialogueText));
+            StartCoroutine(TypeText(currentDialogue.dialogueText, currentDialogue.voiceClip));
         }
         else
         {
@@ -100,13 +105,16 @@ public class DialogueManager : MonoBehaviour
         DisplayDialogue();
     }
 
-    IEnumerator TypeText(string text)
+    IEnumerator TypeText(string text, AudioClip voiceClip)
     {
         dialogueText.text = "";
+
+        float typingSpeed = CalculateTypingDuration(voiceClip, text);
+
         foreach (char letter in text.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(typingSpeed);
         }
     }
 
@@ -125,4 +133,38 @@ public class DialogueManager : MonoBehaviour
     {
         GotoNextScene();
     }
+
+    float CalculateTypingDuration(AudioClip voiceClip, string text)
+    {
+        if (voiceClip == null || text.Length == 0)
+        {
+            return 0.1f;
+        }
+
+        float clipDuration = voiceClip.length;
+        float textLength = text.Length;
+
+        float typingDuration = clipDuration / textLength * 0.7f;
+
+        return typingDuration;
+    }
+
+    void AdjustAudioVolumes(string speakerName)
+{
+    backgroundMusicSource.volume = defaultBackgroundMusicVolume * 0.3f;
+
+    if (audioSource != null)
+    {
+        audioSource.volume = 1.0f;
+        audioSource.pitch = 1.0f;
+
+        // Check if the speaker is William Fletcher and double the audio volume
+        if (speakerName == "William Fletcher")
+        {
+            audioSource.volume = audioSource.volume * 2.0f;  // Double the volume
+            Debug.Log("Audio volume doubled for William Fletcher.");  // Log the message
+        }
+    }
+}
+
 }

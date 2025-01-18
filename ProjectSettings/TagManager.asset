@@ -12,11 +12,12 @@ TagManager:
   - HealthBar
   - PauseMenu
   - FadeImage
+  - GameManager
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GameManager
   - Water
   - UI
   - 

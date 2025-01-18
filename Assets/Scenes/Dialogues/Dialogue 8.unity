@@ -837,120 +837,120 @@ MonoBehaviour:
     dialogues:
     - speakerName: Narrator
       dialogueText: William slowly opened his eyes and found himself in a bed.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: cee0a999dd408844a8c7be391f79791a, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Narrator
       dialogueText: To his right, his gaze fell upon a figure with vibrant orange
         hair.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c31d302390e4c2449845ed19039def56, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: ???
       dialogueText: 'Finally awake, buddy? It took you quite a while. How are you
         feeling? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: f3b02975da863b24db62d3c386a4900b, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "I\u2019m exhausted."
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 1e7bc12d32c014d4493eff256a602800, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Spending all night fighting while carrying an injured old man
         and protecting a defenseless woman really takes it out of you. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: d66a520edb6e1634390243d60a2b5d6e, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: ???
       dialogueText: 'I can see why. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: fd0ae516624a92c4da297d3a9ca34072, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Wait, you speak English? Who are you? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 39334b67c1371b54a8d34140aefd3318, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'I''m Harold Redfield, an intern training under Professor Verne. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 4ee1c44e714782b4a93fe23ef706b3f8, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: "I\u2019m from Guildford, and I\u2019ve been sent to assist the
         professor as part of my apprenticeship."
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: d3b029f7adeff494881d72efc83e868a, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'And you are? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: f8cb95d517a6ada45ad144e3249e6dce, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "William Fletcher, supposedly a repatriated officer\u2014if you
         can call getting stranded in France part of that plan. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 9f648372241489749b50a338335ed4d8, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'What happened to you, Mr. Fletcher? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: d19d7e2b179ff414ba1d7d03a1f8a067, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "I was in a car accident; my chauffeur died, and I was lost.
         That\u2019s when I ran into Miss Amelia in the forest. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ce9f1c8e96ff5ec4f8afe53a6f6e2b2d, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "By the way, where\u2019s Miss Amelia? Is she okay? And what
         happened to the old man I was carrying?"
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 10f5607f4b9021d41b73cdaffd8bd3b3, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'Dr. Verne attended to Mr. Perrier, while Miss Amelia went to
         brief the others on the situation. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 8b0e870cc7233374abb937e47c72b863, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'That''s good to hear. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7f0cd5a770d898647aaa76b4e31425cf, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'By the way, Mr. Fletcher, you mentioned you were supposed to
         be repatriated to England, correct? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: f07374ab33f53b14cb4c41ba16d1faaf, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: 'Dr. Verne is heading to Dijon for work tomorrow. Why not go
         with him? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 3b8c7131f6c714f4d97e9f9924b24c72, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
-      dialogueText: 'This way, it will be easier to get to Paris and then return
-        home. '
-      voiceClip: {fileID: 0}
+      dialogueText: 'This way, it will be easier for you to get to Paris and then
+        return home. '
+      voiceClip: {fileID: 8300000, guid: 79c3e867cce3c3c43a8d10d6525b8d48, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Great idea! Thanks a lot, Dr. Redfield. I''ll go talk to him
         now! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 65e395305cef63a479cd997fcd8f8c23, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Dr Harold Redfield
       dialogueText: "Hold on, Mr. Fletcher\u2014your injuries aren\u2019t healed
         yet! "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7c33377f5942bb8468c2b20fa094eaa6, type: 3}
       speakerImage: {fileID: 21300000, guid: e1bd1eb695a64bc49912f0f398632175, type: 3}
       backgroundMusic: {fileID: 0}
   backgroundMusicSource: {fileID: 179437276}

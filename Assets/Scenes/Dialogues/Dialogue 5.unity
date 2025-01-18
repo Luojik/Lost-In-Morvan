@@ -435,6 +435,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1438251565327999451, guid: cad00de7ce7ee51419af2dceaf4eccb8, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 4039441926487688105}
     - target: {fileID: 1647481406025959433, guid: cad00de7ce7ee51419af2dceaf4eccb8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -834,65 +838,61 @@ MonoBehaviour:
     - speakerName: Narrator
       dialogueText: As they continued walking through the forest, the sun gently
         disappeared below the horizon.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a85d4f9135602284c92b420f523122f8, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Narrator
-      dialogueText: 'Amelia suddenly pointed out a cabin with her finger. '
-      voiceClip: {fileID: 0}
+      dialogueText: Amelia suddenly stopped and, using her index finger, pointed
+        to a cabin in the distance.
+      voiceClip: {fileID: 8300000, guid: a31163014f0cf274b8738226be68f93f, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Do you live here, miss? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: b2dbb83078550254d8f2a9f1760c413c, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Amelia
       dialogueText: '#@*!Raymon! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 09f8ebff79538ff46bb68ef7f034ec13, type: 3}
       speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: ...could that be a friend?
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 95ecbeedf16a04f46a8941f2be1a4f89, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: ...
       dialogueText: ...
-      voiceClip: {fileID: 0}
-      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 0}
-    - speakerName: ...
-      dialogueText: ...
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a406774a37dbc0e49950437eb220a794, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: '...What the hell is that! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 868b438137ee96743ba831b9c8de9730, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: Narrator
       dialogueText: William and Amelia stand over the body of an old man, sprawled
         on the floor, surrounded by a pool of blood.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 8b2abfac6d471934e94138935e3f7e59, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: 'Amelia '
       dialogueText: '%&$# '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 41bf49ae24ee9b944880a3bd76ab0355, type: 3}
       speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: ???
-      dialogueText: ...
+      dialogueText: (Growl)
       voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: William Fletcher
       dialogueText: Tch...
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c8b8cd2511ffab14893d5358379b6725, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
   backgroundMusicSource: {fileID: 179437276}
   speakerAnimator: {fileID: 0}
 --- !u!114 &7647203395985562583 stripped

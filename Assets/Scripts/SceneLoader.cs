@@ -12,6 +12,33 @@ public class SceneLoader : MonoBehaviour
 
     [SerializeField] public float fadeInDuration = 1f;
 
+    private void Awake()
+    {
+        GameObject fadeObject = GameObject.FindGameObjectWithTag("FadeImage");
+
+        if (fadeObject != null)
+        {
+            fadeImage = fadeObject.GetComponent<Image>();
+            if (fadeImage == null)
+            {
+                Debug.LogError("No Image component found on the GameObject with the specified tag.");
+            }
+        }
+        else
+        {
+            Debug.LogError("No GameObject found with the specified tag.");
+        }
+
+        if (fadeImage != null)
+        {
+            fadeAnimator = fadeImage.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError("No Image component assigned.");
+        }
+    }
+
     private void Start()
     {
         GameObject fadeObject = GameObject.FindGameObjectWithTag("FadeImage");
@@ -54,6 +81,37 @@ public class SceneLoader : MonoBehaviour
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
 
         Debug.Log("Loading complete!");
+    }
+
+    private void Update()
+    {
+        // Vérifier si la scène actuelle est la scène 0 (index 0)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            GameObject fadeObject = GameObject.FindGameObjectWithTag("FadeImage");
+
+            if (fadeObject != null)
+            {
+                fadeImage = fadeObject.GetComponent<Image>();
+                if (fadeImage == null)
+                {
+                    Debug.LogError("No Image component found on the GameObject with the specified tag.");
+                }
+            }
+            else
+            {
+                Debug.LogError("No GameObject found with the specified tag.");
+            }
+
+            if (fadeImage != null)
+            {
+                fadeAnimator = fadeImage.GetComponent<Animator>();
+            }
+            else
+            {
+                Debug.LogError("No Image component assigned.");
+            }
+        }
     }
 
 

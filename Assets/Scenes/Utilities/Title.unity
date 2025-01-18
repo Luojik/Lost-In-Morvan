@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 124301065}
   - component: {fileID: 124301064}
   - component: {fileID: 124301067}
+  - component: {fileID: 124301068}
   m_Layer: 5
   m_Name: StoryMode
   m_TagString: Untagged
@@ -408,7 +409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 1600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124301064
@@ -454,19 +455,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 124301065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7706597124450275914}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadLevel
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Dialogue 0
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &124301065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +509,18 @@ MonoBehaviour:
   hoverSound: {fileID: 8300000, guid: ce57f9443aa680345994c03b95858cb0, type: 3}
   clickSound: {fileID: 8300000, guid: 1d22112e1472f0a45b0dfd73f4d3368a, type: 3}
   audioSource: {fileID: 1892883053104968994}
+--- !u!114 &124301068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124301062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e0938fb59ee1b43aa54e0bc3a0e6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &232218900
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &232218901
 RectTransform:
   m_ObjectHideFlags: 0
@@ -603,7 +604,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 232218903}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7706597124450275914}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Infinite
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &232218903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -175}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 1600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740711455
@@ -1512,7 +1525,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8187219456659648709}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 832c0091cd6ab8e4c8ca84da03b92639, type: 3}
   m_Name: 
@@ -1804,13 +1817,26 @@ GameObject:
   - component: {fileID: 6951529886811277412}
   - component: {fileID: 7706597124450275914}
   - component: {fileID: 455640045061083165}
-  m_Layer: 0
+  - component: {fileID: 8187219456659648710}
+  m_Layer: 3
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8187219456659648710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187219456659648709}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b3043728d694347afdadc694f7cba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8228210191548143885
 Transform:
   m_ObjectHideFlags: 0

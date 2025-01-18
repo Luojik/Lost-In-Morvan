@@ -856,83 +856,91 @@ MonoBehaviour:
   dialogueSequence:
     dialogues:
     - speakerName: William Fletcher
-      dialogueText: "What\u2026? Gh\u2014what happened? "
-      voiceClip: {fileID: 0}
-      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
-    - speakerName: Narrator
-      dialogueText: William looks around, disoriented, and then notices the chauffeur's
-        seat.
-      voiceClip: {fileID: 0}
-      speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 0}
-    - speakerName: William Fletcher
-      dialogueText: "Is that\u2026blood?"
-      voiceClip: {fileID: 0}
+      dialogueText: Whew, that was a close one!
+      voiceClip: {fileID: 8300000, guid: f55e7264d2973cf49a82b2e00df1bf5d, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
-      dialogueText: "There\u2019s no pulse\u2014he\u2019s dead."
-      voiceClip: {fileID: 0}
+      dialogueText: What was that?
+      voiceClip: {fileID: 8300000, guid: b1b722555ff66db4bb392ff06323fa90, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
-      dialogueText: "Gh\u2014my head hurts!"
-      voiceClip: {fileID: 0}
+      dialogueText: "What\u2019s going on with this forest? I\u2019ve never seen
+        anything like this back in England."
+      voiceClip: {fileID: 8300000, guid: cc6ed6a1e29a8c74ebb7014d5514814a, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
-      dialogueText: I must have hit it when we crashed.
-      voiceClip: {fileID: 0}
+      dialogueText: "France sure is full of surprises\u2026 "
+      voiceClip: {fileID: 8300000, guid: a4fe6158f818d984c8bcfc179f5cd1f5, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
+    - speakerName: ???
+      dialogueText: Hey! %&$#
+      voiceClip: {fileID: 8300000, guid: e21577125b95736418c70bb6898453b6, type: 3}
+      speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: It looks like we drove off the road and into the ravine.
-      voiceClip: {fileID: 0}
+      dialogueText: What?
+      voiceClip: {fileID: 8300000, guid: a8dd28d07f96e604084a5c4105c2ad52, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: "There\u2019s no way to get back to the road too. It\u2019s too
-        steep to climb. "
-      voiceClip: {fileID: 0}
+      dialogueText: "Who\u2019s that? A woman?"
+      voiceClip: {fileID: 8300000, guid: 6c7d36b964e066a49a7346bd731db57c, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: "On top of that, it\u2019s almost dark, and I\u2019m stuck in
-        the middle of the woods. "
-      voiceClip: {fileID: 0}
+      dialogueText: "What\u2019s she doing out here in the middle of the woods?"
+      voiceClip: {fileID: 8300000, guid: cf80462df4bc3174e95ba27c3521a5f9, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: "There\u2019s nothing around\u2026 absolutely nothing! "
-      voiceClip: {fileID: 0}
+      dialogueText: Is she lost as well?
+      voiceClip: {fileID: 8300000, guid: 9ddea2b2e14f297499394bc22096e319, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
+    - speakerName: ???
+      dialogueText: "\xBF\xA1%*"
+      voiceClip: {fileID: 8300000, guid: 09f8ebff79538ff46bb68ef7f034ec13, type: 3}
+      speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: "I don\u2019t even know where I am, and the road is unreachable. "
-      voiceClip: {fileID: 0}
+      dialogueText: "What is she saying? I don\u2019t understand French!"
+      voiceClip: {fileID: 8300000, guid: 2ff281bf1a6837f439da0616d223063a, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
+    - speakerName: ???
+      dialogueText: "\u2026 "
+      voiceClip: {fileID: 8300000, guid: 5c06fa8bc559e5b48ae0f3d7754d4257, type: 3}
+      speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
+    - speakerName: ???
+      dialogueText: "@#\xBF\xA1name? "
+      voiceClip: {fileID: 8300000, guid: 11226e33226bdab448b40d66a2a5d146, type: 3}
+      speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: 'First priority is to find a safe spot. I need to keep moving. '
-      voiceClip: {fileID: 0}
+      dialogueText: 'Oh, I caught that word! '
+      voiceClip: {fileID: 8300000, guid: 71adacdedcb37604292e009ca40ab44d, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
     - speakerName: William Fletcher
-      dialogueText: 'But where? '
+      dialogueText: "I\u2019m William. William Fletcher."
+      voiceClip: {fileID: 8300000, guid: 8a80c3fa46647ca46b40a17d996a7608, type: 3}
+      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: fc1d11ce9ab3ba54eaf12d71c49af3a0, type: 3}
+    - speakerName: ???
+      dialogueText: (Growl)
       voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
-      speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
-    - speakerName: '??? '
-      dialogueText: ...
-      voiceClip: {fileID: 0}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: William Fletcher
-      dialogueText: 'What was that? '
-      voiceClip: {fileID: 0}
+      dialogueText: Not again! Stay close behind me, miss!
+      voiceClip: {fileID: 8300000, guid: 4a12b36c1f00a1248905e2af0216bfad, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 0}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
   backgroundMusicSource: {fileID: 179437276}
   speakerAnimator: {fileID: 2126522734}
 --- !u!1660057539 &9223372036854775807

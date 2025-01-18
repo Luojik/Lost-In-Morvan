@@ -504,6 +504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9065249292773993505, guid: cad00de7ce7ee51419af2dceaf4eccb8, type: 3}
+      propertyPath: m_TagString
+      value: FadeImage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -833,82 +837,82 @@ MonoBehaviour:
     dialogues:
     - speakerName: William Fletcher
       dialogueText: "What\u2026? Gh\u2014what happened? "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: df2ba9bde9c09cd43be92f7fbaa15ca3, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Narrator
       dialogueText: William looks around, disoriented, and then notices the chauffeur's
         seat.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ed4a2a9f479e0ad40875879228c4ee61, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "Is that\u2026blood?"
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 4edc54dcd13b25a4c8b81bfff1a3a75f, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "There\u2019s no pulse\u2014he\u2019s dead."
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 983d07becc0ec364da51944e2454ab7b, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "Gh\u2014my head hurts!"
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7d44e7e60a41f524dbdd8360093ee404, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: I must have hit it when we crashed.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: e82f03d6f8c4e9340b4c8a2bdc0c0af3, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: It looks like we drove off the road and into the ravine.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: db15c18386143404686cd44d7b757a27, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "There\u2019s no way to get back to the road too. It\u2019s too
         steep to climb. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c82bed29051542247b6148692c98457b, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "On top of that, it\u2019s almost dark, and I\u2019m stuck in
         the middle of the woods. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 7c0865b5dee019a449e2cd7ecb5b00ac, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "There\u2019s nothing around\u2026 absolutely nothing! "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: b0ea34725e61be1499cfcf79288513fe, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "I don\u2019t even know where I am, and the road is unreachable. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a0f38d3aab60eaf4588f586c75cdb000, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'First priority is to find a safe spot. I need to keep moving. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a086d05c6c11ca0449d936e0df7220a0, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'But where? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: f2054a1b587337e47961548bf34189d3, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: '??? '
-      dialogueText: ...
+      dialogueText: (Growl)
       voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
     - speakerName: William Fletcher
       dialogueText: 'What was that? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 834c018ee388519428996a05ecdec9e7, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
-      backgroundMusic: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+      backgroundMusic: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
   backgroundMusicSource: {fileID: 179437276}
   speakerAnimator: {fileID: 7647203395985562585}
 --- !u!114 &7647203395985562583 stripped

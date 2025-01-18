@@ -233,6 +233,11 @@ public class CombatManager : MonoBehaviour
     {
         soldierStats.skillPointsText.text = soldierStats.skillPoints.ToString();
 
+        if (!soldierStats.GetIsDead() && soldierAnimator.GetCurrentAnimatorStateInfo(0).IsName("Death"))
+        {
+            soldierAnimator.SetTrigger("Restart");
+        }
+
         if (isTimerRunning)
         {
             if (timeRemaining > 0)
@@ -264,6 +269,7 @@ public class CombatManager : MonoBehaviour
                 once = false;
             }
         }
+        
         else if (orcStats.GetIsDead())
         {   
             orcAnimator.SetTrigger("Death");

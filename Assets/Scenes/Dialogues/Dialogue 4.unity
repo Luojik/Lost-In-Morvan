@@ -741,43 +741,43 @@ MonoBehaviour:
     dialogues:
     - speakerName: William Fletcher
       dialogueText: "How many of these things wander around this forest? Honestly\u2026 "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: c76d41eb79a69e84fbe0f667f55347af, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: Your name is Amelia, right? Are you alright, miss Amelia?
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 6af1d6c13f2e4404e81ca3ab38e5d2b7, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Are you lost as well? Do you perhaps know a way out of the forest? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 9be36b0cf11956e4d9b2e962c23e9f9c, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Amelia
       dialogueText: "\u20AC*^!"
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 5c06fa8bc559e5b48ae0f3d7754d4257, type: 3}
       speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "Ah, yes, I almost forgot\u2014language barrier. "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 9465d80cedc345e4fbf91e5017b3bf75, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Amelia
       dialogueText: '&*%#follow! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 11226e33226bdab448b40d66a2a5d146, type: 3}
       speakerImage: {fileID: 21300000, guid: 47874c81a092cc149aad994896374f91, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Hold on, where are you going?! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 36c5eef917b7db14d9b70b7215169dec, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Narrator
       dialogueText: The young officer followed Amelia, holding onto the hope that
         she might know a way out of the forest.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: b679d077b59e4d04e90214d20a211d33, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
   backgroundMusicSource: {fileID: 179437276}

@@ -889,31 +889,33 @@ MonoBehaviour:
     - speakerName: 
       dialogueText: They walked through most of the night, and as dawn began to break
         on the horizon, William and Amelia were utterly exhausted.
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 074e9ac1586995a408d11b394b539e88, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
       dialogueText: 'William alternated between carrying the old man and fighting
         off the enemies that blocked their path. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 47004aa1cb330ec4a9cecdc6de7b5601, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
       dialogueText: 'Finally, they reached civilization, with a sign at the town''s
         entrance indicating they had arrived in Autun. '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 06ade55608505ea40a2209ddc4888c55, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
-      dialogueText: 'After hearing the young girl''s screams, people rushed into
-        the street. '
-      voiceClip: {fileID: 0}
+      dialogueText: Upon hearing the young girl's screams, people rushed into the
+        street.
+      voiceClip: {fileID: 8300000, guid: 77c502b0d2e676f4d8e12789252d3f4b, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
     - speakerName: 
-      dialogueText: 'Amelia spoke urgently with the locals, but William couldn''t
-        understand. His vision blurred, and he collapsed to the ground. '
-      voiceClip: {fileID: 0}
+      dialogueText: Through William's perspective, Amelia was urgently speaking to
+        the locals about the nature of their situation. When William attempted to
+        glean an understanding, his vision blurred, his hearing faded, and shortly
+        after, he collapsed to the ground.
+      voiceClip: {fileID: 8300000, guid: 414a3f34c4b5a764384b895d5ae6b42a, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 8300000, guid: 4baf4edfeba81c34192fa2d6aada8659, type: 3}
   backgroundMusicSource: {fileID: 679434874}

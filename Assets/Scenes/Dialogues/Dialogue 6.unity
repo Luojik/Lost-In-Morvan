@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0d72c2ca7828df14eb9167206cad11c5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -822,28 +822,29 @@ MonoBehaviour:
     dialogues:
     - speakerName: William Fletcher
       dialogueText: 'Is he alright? '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: db24489c0efb9e146968a697f8a17999, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: No, of course not! We need to find a doctor!
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: 18f868ccf9e3dca499b718e7af243f94, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: Narrator
-      dialogueText: 'William carefully lifts the frail old man into his arms and
-        follows Amelia, the moon beginning to appear in the sky. '
-      voiceClip: {fileID: 0}
+      dialogueText: William carefully lifts the frail old man into his arms and he
+        quickly follows Amelia. The pair hasten their pace as they begin to see the
+        moon appear in the sky.
+      voiceClip: {fileID: 8300000, guid: 7552695874859414385173f6df8c1386, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: ???
-      dialogueText: ...
+      dialogueText: (Growl)
       voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: 'Miss, carry him while I handle this! '
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ef002fdfb5e5d6f4c8d9f53dd48d26a2, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
   backgroundMusicSource: {fileID: 179437276}

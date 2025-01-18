@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cba16aea90f77d743bce287a55174480, type: 3}
+  m_audioClip: {fileID: 8300000, guid: dad0ccca2284f7340bba6602fc416b87, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -725,18 +725,18 @@ MonoBehaviour:
   dialogueSequence:
     dialogues:
     - speakerName: ???
-      dialogueText: ...
+      dialogueText: (Growl)
       voiceClip: {fileID: 8300000, guid: c606437d70ce2024c83b60d23f3daeb3, type: 3}
       speakerImage: {fileID: 21300000, guid: 1427984ff6757c844ac49726ebfe3974, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "I\u2019m starting to get used to it\u2026 "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: a762c28305d4edc4db6fbcb5324856e3, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
     - speakerName: William Fletcher
       dialogueText: "I was supposed to be off duty, though\u2026 "
-      voiceClip: {fileID: 0}
+      voiceClip: {fileID: 8300000, guid: ec640e246fb5f484485a6d14eb5972ca, type: 3}
       speakerImage: {fileID: 21300000, guid: 81649ee8733276d41834e3fd19285cad, type: 3}
       backgroundMusic: {fileID: 0}
   backgroundMusicSource: {fileID: 179437276}
